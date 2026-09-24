@@ -23,7 +23,7 @@ jobs:
 
       - name: Build EXE
         run: |
-          pyinstaller --onefile --name FileOrganizer organizer.py
+          pyinstaller --onefile --name FileOrganizer "last file organizer.py"
 
       - name: Upload EXE
         uses: actions/upload-artifact@v4
